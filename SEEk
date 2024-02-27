@@ -1,36 +1,36 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "SEEK脚本", HidePremium = false, IntroText = "SEEK脚本"})
+local Window = OrionLib:MakeWindow({Name = "BYD脚本", HidePremium = false, IntroText = "BYD脚本"})
 
 local about = Window:MakeTab({
-    Name = "SEEK制作",
+    Name = "shuaiB制作",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
-about:AddParagraph("该脚本免费")
-about:AddParagraph("你看到这个你圈钱了")
-about:AddParagraph("作者:SEEK ")
-about:AddParagraph("帮助者:🥂坐断你的钢筋🥂和Ron")
-about:AddParagraph("帮助者QQ:2279503203和3252274")
-about:AddParagraph("作者QQ:3353731830")
+about:AddParagraph("测试版")
+about:AddParagraph("脚本为私用 请勿去圈钱")
+about:AddParagraph("作者:Ron ")
+about:AddParagraph("帮助者:SEEK")
+about:AddParagraph("帮助者QQ:SEEK")
+about:AddParagraph("作者QQ:无私用脚本不用写")
 about:AddParagraph("禁止倒卖")
 
 local Tab =Window:MakeTab({
 	Name = "关于作者",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
 	Name = "复制作者QQ",
 	Callback = function()
-     setclipboard("3353731730")
+     setclipboard("")
   	end
 })
 
 OrionLib:MakeNotification({
-	Name = "SEEK脚本",
-	Content = "欢迎使用SEEK脚本",
+	Name = "BYD脚本",
+	Content = "欢迎使用BYD脚本",
 	Image = "rbxassetid://4483345998",
 	Time = 2
 })
@@ -74,7 +74,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "SEEK飞行V3🤑（隐藏）",
+	Name = "飞行V3（隐藏）",
 	Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/gEd1QwJE"))()
   	end    
@@ -130,7 +130,7 @@ end)
 })
 
 Tab:AddToggle({
-	Name = "SEEK穿墙",
+	Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
 		if Value then
@@ -464,9 +464,9 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name = "DOORSBobHub汉化版",
+    Name = "MSDOORS",
 	Callback = function()
-	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/mstudio45/MSDOORS/7bd97c2d956a775d683c2d7973d79715b30998ea/MSDOORS/Moonsec.lua'))()
 	end
 })
 
@@ -563,7 +563,7 @@ jesusModel.jesus.ProximityPrompt.Triggered:Connect(function()
     Achievements.Get({
         Title = "成功解锁彩蛋",
         Desc = "你拯救了十字架上的耶稣",
-        Reason = "SEEK脚本魔改",
+        Reason = "龙脚本魔改",
         Image = "https://raw.githubusercontent.com/persopoiu/scripts/main/66963_easter_egg_green_icon.png",
     })
     -- fade out
@@ -740,7 +740,7 @@ local function npc3dialogue()
 end
 
 local function luk3dialogue()
-    dialogueLabel.Text = "你个傻逼东西还玩迷你世界？"
+    dialogueLabel.Text = "你个傻逼东西还玩原神？"
     local text = dialogueLabel.Text
    for i = 1, #text do
         dialogueLabel.Text = string.sub(text, 1, i)
@@ -749,7 +749,7 @@ local function luk3dialogue()
 end
 
 local function upiodialogue()
-    dialogueLabel.Text = "ROBLOX真好玩我太喜欢这个游戏了"
+    dialogueLabel.Text = "原神真好玩我太喜欢这个游戏了"
     local text = dialogueLabel.Text
    for i = 1, #text do
         dialogueLabel.Text = string.sub(text, 1, i)
@@ -825,13 +825,13 @@ loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
     end
 })
 Tab:AddButton({
-	Name = "手电筒（没电有bug）",
+	Name = "手电筒（没电会有bug）",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))()
     end
 }) 
 Tab:AddButton({
-	Name = "神圣炸弹（钢筋提供）",
+	Name = "神圣炸弹（清岩提供）",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
     end
@@ -843,13 +843,13 @@ loadstring(game:HttpGet('https://gist.githubusercontent.com/C00LBOZO/0c78ad8c74c
     end
 })
 Tab:AddButton({
-	Name = "变身(钢筋提供)",
+	Name = "变身(阿巴怪提供)",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
     end
 })
 Tab:AddButton({
-	Name = "微山2.3.2(依旧是钢筋提供)",
+	Name = "微山2.3.2(依旧是阿巴怪提供)",
 	Callback = function()
 --微山doors 2.3.2(愚人节快乐)
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
@@ -890,8 +890,8 @@ Tab:AddButton({
 })
 
 Tab:AddButton({  
-    Name = "鸭hub",
+    Name = "彼艾弗脚本",
 	Callback = function()
-	loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,81,89,49,113,112,99,115,106})end)())))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 	end
 })
