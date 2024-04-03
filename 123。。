@@ -1,0 +1,55 @@
+
+print("Anti Afk On")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "反挂机已自动开启",
+    Text = "被踢出服务器的概率已降低",
+    Duration = 5,
+})
+wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "启动成功",
+    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用   🥂钢筋脚本🥂   ",
+    Duration = 5,
+})
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "脚本已启动脚本🥂"})
+local Tab = Window:MakeTab({
+	Name = "通用",
+	Icon = "rbxassetid://15905575484",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "跳跃",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "速度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "重力",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.Gravity = Value
+	end
+})
